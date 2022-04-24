@@ -13,6 +13,8 @@ public class AppUser implements UserDetails {
     private String email;
     private String password;
     private AppUserRole appUserRole;
+    private Boolean locked;
+    private Boolean enabled;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
