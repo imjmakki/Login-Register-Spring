@@ -1,5 +1,6 @@
 package app.logreg.v1.Registration;
 
+import app.logreg.v1.DAO.RegistrationRequest;
 import app.logreg.v1.Service.RegistrationService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,7 +14,7 @@ public class RegistrationController {
 
     private RegistrationService registrationService;
 
-    public String register(@RequestBody RegistragionRequest request) {
+    public String register(@RequestBody RegistrationRequest request) {
         return registrationService.register(request);
     }
 }
