@@ -1,5 +1,6 @@
 package app.logreg.v1.AppUser;
 
+import app.logreg.v1.enums.AppUserRole;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
