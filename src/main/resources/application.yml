@@ -1,1 +1,10 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
 
+spring:
+  datasource:
+    password:
+    url: jdbc:postgresql://localhost:5432/registration
+    username:
