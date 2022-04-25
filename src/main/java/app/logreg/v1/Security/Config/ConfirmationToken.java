@@ -7,4 +7,5 @@ public class ConfirmationToken {
     private String token;
     private LocalDateTime createdAt;
     private LocalDateTime expiredAt;
+    private LocalDateTime confirmedAt;
 }
