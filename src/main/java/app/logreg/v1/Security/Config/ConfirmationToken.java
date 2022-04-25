@@ -32,6 +32,10 @@ public class ConfirmationToken {
     private LocalDateTime expiresAt;
     private LocalDateTime confirmedAt;
     @ManyToOne
+    @JoinColumn(
+            nullable = false,
+            name = "app_user_id"
+    )
     private AppUser appUser;
 
     public ConfirmationToken(String token,
