@@ -1,4 +1,4 @@
-package app.logreg.v1.DAO;
+package app.logreg.v1.Security.Config;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

@@ -1,7 +1,7 @@
 package app.logreg.v1.Service;
 
 import app.logreg.v1.AppUser.AppUser;
-import app.logreg.v1.DAO.RegistrationRequest;
+import app.logreg.v1.Security.Config.RegistrationRequest;
 import app.logreg.v1.Security.Config.EmailValidator;
 import app.logreg.v1.enums.AppUserRole;
 import lombok.AllArgsConstructor;
