@@ -24,7 +24,8 @@ public class AppUserService implements UserDetailsService {
     }
 
     public String signUpUser(AppUser appUser) {
-        appUserRepository.findByEmail(appUser.getEmail())
+        boolean userExists = appUserRepository
+                .findByEmail(appUser.getEmail())
                 .isPresent();
         return "";
     }
