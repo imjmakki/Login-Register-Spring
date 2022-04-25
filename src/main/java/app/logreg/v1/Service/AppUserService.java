@@ -37,6 +37,8 @@ public class AppUserService implements UserDetailsService {
         String encodedPassword = bCryptPasswordEncoder
                 .encode(appUser.getPassword());
         appUser.setPassword(encodedPassword);
+        appUserRepository.save(appUser);
+
         return "it works";
     }
 }
