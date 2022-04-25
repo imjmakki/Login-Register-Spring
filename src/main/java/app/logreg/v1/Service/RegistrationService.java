@@ -10,7 +10,8 @@ import org.springframework.stereotype.Service;
 public class RegistrationService {
     private EmailValidator emailValidator;
     public String register(RegistrationRequest request) {
-        boolean isValidEmail = emailValidator.test(request.getEmail());
+        boolean isValidEmail = emailValidator.
+                test(request.getEmail());
         return "it works";
     }
 }
