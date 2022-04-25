@@ -1,5 +1,6 @@
 package app.logreg.v1.Service;
 
+import app.logreg.v1.AppUser.AppUser;
 import app.logreg.v1.DAO.AppUserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,7 +23,7 @@ public class AppUserService implements UserDetailsService {
                         String.format(USER_NOT_FOUND_MSG, email)));
     }
 
-    public String signUpUser() {
+    public String signUpUser(AppUser appUser) {
 
     }
 }
