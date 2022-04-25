@@ -1,5 +1,6 @@
 package app.logreg.v1.Service;
 
+import app.logreg.v1.AppUser.AppUser;
 import app.logreg.v1.DAO.RegistrationRequest;
 import app.logreg.v1.Security.Config.EmailValidator;
 import lombok.AllArgsConstructor;
@@ -16,6 +17,11 @@ public class RegistrationService {
         if (!isValidEmail) {
             throw new IllegalStateException("email not valid");
         }
-        return appUserService.signUpUser();
+        return appUserService.signUpUser(
+                new AppUser(
+                        request.getFirstName(),
+
+                )
+        );
     }
 }
