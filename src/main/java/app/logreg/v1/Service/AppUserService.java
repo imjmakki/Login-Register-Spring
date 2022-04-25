@@ -33,8 +33,10 @@ public class AppUserService implements UserDetailsService {
         if (userExists) {
             throw new IllegalStateException("email already taken");
         }
+
         String encodedPassword = bCryptPasswordEncoder
                 .encode(appUser.getPassword());
+        appUser.setPassword(encodedPassword);
         return "";
     }
 }
