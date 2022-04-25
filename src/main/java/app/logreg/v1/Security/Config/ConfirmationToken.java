@@ -27,16 +27,17 @@ public class ConfirmationToken {
     private String token;
     @Column(nullable = false)
     private LocalDateTime createdAt;
-    private LocalDateTime expiredAt;
+    @Column(nullable = false)
+    private LocalDateTime expiresAt;
     private LocalDateTime confirmedAt;
 
     public ConfirmationToken(String token,
                              LocalDateTime createdAt,
-                             LocalDateTime expiredAt,
+                             LocalDateTime expiresAt,
                              LocalDateTime confirmedAt) {
         this.token = token;
         this.createdAt = createdAt;
-        this.expiredAt = expiredAt;
+        this.expiresAt = expiresAt;
         this.confirmedAt = confirmedAt;
     }
 }
