@@ -24,6 +24,6 @@ public class AppUserService implements UserDetailsService {
     }
 
     public String signUpUser(AppUser appUser) {
-
+        return "";
     }
 }
