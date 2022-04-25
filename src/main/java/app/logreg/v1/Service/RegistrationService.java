@@ -8,7 +8,8 @@ import org.springframework.stereotype.Service;
 @Service
 @AllArgsConstructor
 public class RegistrationService {
-    private EmailValidator emailValidator;
+    private final AppUserService appUserService;
+    private final EmailValidator emailValidator;
     public String register(RegistrationRequest request) {
         boolean isValidEmail = emailValidator.
                 test(request.getEmail());
