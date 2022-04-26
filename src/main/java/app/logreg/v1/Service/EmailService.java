@@ -10,7 +10,8 @@ import org.springframework.stereotype.Service;
 @Service
 @AllArgsConstructor
 public class EmailService implements EmailSender {
-    private final static Logger LOGGER = LoggerFactory.getLogger(EmailService.class);
+    private final static Logger LOGGER = LoggerFactory
+            .getLogger(EmailService.class);
     private final JavaMailSender mailSender;
     @Override
     public void send(String to, String email) {
